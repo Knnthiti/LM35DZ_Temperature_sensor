@@ -1,4 +1,4 @@
-23846752979361868
+23850293880111020
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -67381,6 +67381,13 @@ net tie
 0
 4
 4
+OLED
+MODULE_DM-OLED096-636
+
+
+0
+8
+8
 OptoDevice
 ADNS-9800
 Laser Gaming Sensor ADNS-9800
@@ -88990,6 +88997,13 @@ rotary encoder illuminated switch vertical
 0
 9
 8
+SW_Push
+SW_TH_Tactile_Omron_B3F-10xx
+SW_TH_Tactile_Omron_B3F-10xx_https://www.omron.com/ecb/products/pdf/en-b3f.pdf
+Omron B3F-10xx
+0
+4
+2
 Sensor
 ASAIR_AM2302_P2.54mm_Lead2.75mm_TabDown
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/AM2302.pdf
