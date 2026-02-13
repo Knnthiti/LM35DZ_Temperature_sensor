@@ -1,0 +1,1190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>C:\Users\Knnn\Desktop\LM35DZ_Temperature_sensor\Temperature_sensor\Temperature_sensor.kicad_sch</source>
+    <date>2026-02-13T22:16:05+0700</date>
+    <tool>Eeschema 8.0.5</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Temperature_sensor.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>0.1uC</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3086a50b-f449-42d5-89d7-a47f4851766c</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>22uC</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <description>Polarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Polarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="CP_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>380f38c2-48a9-4902-a2f6-77d91ea73207</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>10uC</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <description>Polarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Polarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="CP_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>81b99738-6660-4716-bd8b-5b034514ac4e</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>10uC</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <description>Polarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Polarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="CP_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>43d6bde9-5488-4823-aa48-b1831eb84b89</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>0.1uC</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>14792a5f-f56e-428e-90d9-19b9672833e5</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>0.1uC</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c79ef5ff-2940-4686-afc5-161fd833ef2a</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>0.1uC</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>83a52576-c7e9-4c1c-aeff-cba6915297fe</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>0.1uC</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a46e5066-e058-4761-94ba-13aa680bef08</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>22uC</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <description>Polarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Polarized capacitor</field>
+      </fields>
+      <libsource lib="" part="C_Polarized_1" description="Polarized capacitor"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="CP_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ba5b6d55-48cb-4a06-b209-a93cce6e99da</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>0.1uC</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <description>Unpolarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="C_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fa3f6b15-d900-4e7d-8f4c-84df0bfaf09d</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>22uC</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <description>Polarized capacitor</description>
+      <fields>
+        <field name="Footprint">Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</field>
+        <field name="Datasheet"/>
+        <field name="Description">Polarized capacitor</field>
+      </fields>
+      <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <property name="ki_keywords" value="cap capacitor"/>
+      <property name="ki_fp_filters" value="CP_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>377eeb87-f2ed-4c55-907d-51fbb66bc86b</tstamps>
+    </comp>
+    <comp ref="D1">
+      <value>LED_Green</value>
+      <footprint>LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <description>Light emitting diode</description>
+      <fields>
+        <field name="Footprint">LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Light emitting diode</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e7110ea8-f249-42ee-86ad-f4103ab1d879</tstamps>
+    </comp>
+    <comp ref="D2">
+      <value>LED_Red</value>
+      <footprint>LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <description>Light emitting diode</description>
+      <fields>
+        <field name="Footprint">LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Light emitting diode</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <property name="ki_keywords" value="LED diode"/>
+      <property name="ki_fp_filters" value="LED* LED_SMD:* LED_THT:*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0b3595f0-5774-4ad5-a738-6c20a4c73293</tstamps>
+    </comp>
+    <comp ref="IC1">
+      <value>TC7660</value>
+      <footprint>TC7660:TC7660</footprint>
+      <fields>
+        <field name="MF">Toshiba</field>
+        <field name="Description_1">
+                        
+                            Charge Pump Switching Regulator IC Positive or Negative Fixed -Vin, 2Vin 1 Output 20mA 8-SOIC (0.154, 3.90mm Width)
+                        
+</field>
+        <field name="Package">SOIC-8 Toshiba</field>
+        <field name="Price">None</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/TC7660/Toshiba/view-part/?ref=snap</field>
+        <field name="MP">TC7660</field>
+        <field name="Availability">Not in stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/TC7660/Toshiba/view-part/?ref=eda</field>
+        <field name="Footprint">TC7660:TC7660</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TC7660" part="TC7660" description=""/>
+      <property name="MF" value="Toshiba"/>
+      <property name="Description_1" value="&#xA;                        &#xA;                            Charge Pump Switching Regulator IC Positive or Negative Fixed -Vin, 2Vin 1 Output 20mA 8-SOIC (0.154, 3.90mm Width)&#xA;                        &#xA;"/>
+      <property name="Package" value="SOIC-8 Toshiba"/>
+      <property name="Price" value="None"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/TC7660/Toshiba/view-part/?ref=snap"/>
+      <property name="MP" value="TC7660"/>
+      <property name="Availability" value="Not in stock"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/TC7660/Toshiba/view-part/?ref=eda"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ffce22ad-2932-4e99-8efa-268c18fcee03</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>BAT_GND</value>
+      <footprint>Connector_PinSocket_2.00mm:PinSocket_1x01_P2.00mm_Vertical</footprint>
+      <description>Generic connector, single row, 01x01, script generated</description>
+      <fields>
+        <field name="Footprint">Connector_PinSocket_2.00mm:PinSocket_1x01_P2.00mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x01, script generated</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x01_Pin" description="Generic connector, single row, 01x01, script generated"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e92dda48-0b9b-4fe0-a6ed-0bad7ae2db4a</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>BAT_3.7V</value>
+      <footprint>Connector_PinSocket_2.00mm:PinSocket_1x01_P2.00mm_Vertical</footprint>
+      <description>Generic connector, single row, 01x01, script generated</description>
+      <fields>
+        <field name="Footprint">Connector_PinSocket_2.00mm:PinSocket_1x01_P2.00mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description">Generic connector, single row, 01x01, script generated</field>
+      </fields>
+      <libsource lib="Connector" part="Conn_01x01_Pin" description="Generic connector, single row, 01x01, script generated"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <property name="ki_keywords" value="connector"/>
+      <property name="ki_fp_filters" value="Connector*:*_1x??_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cdcb15e8-740b-4487-ab5c-ef45a3308aaa</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>1k</value>
+      <footprint>LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c4652af9-14fb-4ba0-950f-a136d2e41dc4</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>1k</value>
+      <footprint>LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c9b0de8c-c0b6-48b9-bd1b-d21b968ea0e7</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>1k</value>
+      <footprint>LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>327ea94a-c325-47a1-8000-58b91b7151ac</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>47k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>37d63cfc-9aa8-4a49-a3e9-646282e94915</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>20k</value>
+      <footprint>Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>95d4d635-f77c-45c7-b4df-28578626ec9c</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>1k</value>
+      <footprint>LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e5fbeb7e-9397-40be-ad7f-bcf46537da95</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>1k</value>
+      <footprint>LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</footprint>
+      <description>Resistor</description>
+      <fields>
+        <field name="Footprint">LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder</field>
+        <field name="Datasheet"/>
+        <field name="Description">Resistor</field>
+      </fields>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <property name="ki_keywords" value="R res resistor"/>
+      <property name="ki_fp_filters" value="R_*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d837be16-3d05-46cb-949b-0b3b5d4c8acc</tstamps>
+    </comp>
+    <comp ref="S1">
+      <value>JS202011CQN</value>
+      <footprint>JS202011CQN:JS202011CQN</footprint>
+      <fields>
+        <field name="MF">C&amp;K</field>
+        <field name="Description_1">
+                        
+                            Switch, Slide, DPDT, ON-ON, Top Slide, 300mA, 6VDC, ThruHole, PC Pin | C&amp;K JS202011CQN
+                        
+</field>
+        <field name="Package">None</field>
+        <field name="Price">None</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/JS202011CQN/C%2526K/view-part/?ref=snap</field>
+        <field name="MP">JS202011CQN</field>
+        <field name="Availability">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/JS202011CQN/C%2526K/view-part/?ref=eda</field>
+        <field name="Footprint">JS202011CQN:JS202011CQN</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="switch_JS202011CQN" part="JS202011CQN" description=""/>
+      <property name="MF" value="C&amp;K"/>
+      <property name="Description_1" value="&#xA;                        &#xA;                            Switch, Slide, DPDT, ON-ON, Top Slide, 300mA, 6VDC, ThruHole, PC Pin | C&amp;K JS202011CQN&#xA;                        &#xA;"/>
+      <property name="Package" value="None"/>
+      <property name="Price" value="None"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/JS202011CQN/C%2526K/view-part/?ref=snap"/>
+      <property name="MP" value="JS202011CQN"/>
+      <property name="Availability" value="In Stock"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/JS202011CQN/C%2526K/view-part/?ref=eda"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fcc9303e-f02b-4ff5-bcde-c91590bd824b 3926b485-b953-4712-9f15-b849e1802446</tstamps>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_Push</value>
+      <footprint>SW_Push:SW_TH_Tactile_Omron_B3F-10xx</footprint>
+      <description>Push button switch, generic, two pins</description>
+      <fields>
+        <field name="Footprint">SW_Push:SW_TH_Tactile_Omron_B3F-10xx</field>
+        <field name="Datasheet"/>
+        <field name="Description">Push button switch, generic, two pins</field>
+      </fields>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eadc90a5-0475-4be1-a0d6-e1df68b8613c</tstamps>
+    </comp>
+    <comp ref="SW2">
+      <value>SW_Push</value>
+      <footprint>SW_Push:SW_TH_Tactile_Omron_B3F-10xx</footprint>
+      <description>Push button switch, generic, two pins</description>
+      <fields>
+        <field name="Footprint">SW_Push:SW_TH_Tactile_Omron_B3F-10xx</field>
+        <field name="Datasheet"/>
+        <field name="Description">Push button switch, generic, two pins</field>
+      </fields>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>96d1e9e2-b8ec-418f-9fac-4147a25bfb9e</tstamps>
+    </comp>
+    <comp ref="SW3">
+      <value>SW_Push</value>
+      <footprint>SW_Push:SW_TH_Tactile_Omron_B3F-10xx</footprint>
+      <description>Push button switch, generic, two pins</description>
+      <fields>
+        <field name="Footprint">SW_Push:SW_TH_Tactile_Omron_B3F-10xx</field>
+        <field name="Datasheet"/>
+        <field name="Description">Push button switch, generic, two pins</field>
+      </fields>
+      <libsource lib="Switch" part="SW_Push" description="Push button switch, generic, two pins"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0e424995-69f5-49c4-b9a4-62fee8b43b8f</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>TP4056</value>
+      <footprint>TP4056:SOP127P600X175-9N</footprint>
+      <fields>
+        <field name="MF">NanJing Top Power ASIC Corp.</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">1.75mm</field>
+        <field name="Package">Package</field>
+        <field name="Price">None</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/TP4056/NanJing+Top+Power+ASIC+Corp./view-part/?ref=eda</field>
+        <field name="STANDARD">IPC 7351B</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/TP4056/NanJing+Top+Power+ASIC+Corp./view-part/?ref=snap</field>
+        <field name="MP">TP4056</field>
+        <field name="Description_1">
+                        
+                            Complete single cell Li-Ion battery with a constant current / constant voltage linear charger
+                        
+</field>
+        <field name="Availability">Not in stock</field>
+        <field name="MANUFACTURER">NanJing Top Power ASIC Corp.</field>
+        <field name="Footprint">TP4056:SOP127P600X175-9N</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="TP4056_IC" part="TP4056" description=""/>
+      <property name="MF" value="NanJing Top Power ASIC Corp."/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value="1.75mm"/>
+      <property name="Package" value="Package"/>
+      <property name="Price" value="None"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/TP4056/NanJing+Top+Power+ASIC+Corp./view-part/?ref=eda"/>
+      <property name="STANDARD" value="IPC 7351B"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/TP4056/NanJing+Top+Power+ASIC+Corp./view-part/?ref=snap"/>
+      <property name="MP" value="TP4056"/>
+      <property name="Description_1" value="&#xA;                        &#xA;                            Complete single cell Li-Ion battery with a constant current / constant voltage linear charger&#xA;                        &#xA;"/>
+      <property name="Availability" value="Not in stock"/>
+      <property name="MANUFACTURER" value="NanJing Top Power ASIC Corp."/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f95e9212-f830-4697-a469-cc1cf8f27a3a</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>ESP32-S3-ZERO</value>
+      <footprint>esp32s3Zero:MODULE_ESP32-S3-ZERO</footprint>
+      <fields>
+        <field name="MF">Waveshare Electronics</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">4.35mm</field>
+        <field name="CREATOR">ANA</field>
+        <field name="Price">None</field>
+        <field name="Package">None</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/ESP32-S3-Zero/Waveshare+Electronics/view-part/?ref=eda</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="PARTREV">NA</field>
+        <field name="VERIFIER">RODRIGO</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/ESP32-S3-Zero/Waveshare+Electronics/view-part/?ref=snap</field>
+        <field name="MP">ESP32-S3-Zero</field>
+        <field name="Description_1">
+                        
+                            ESP32-S3 Mini Development Board, Based on ESP32-S3FH4R2 Dual-Core Processor, 240MHz Running Frequency, 2.4GHz Wi-Fi &amp; Bluetooth 5
+                        
+</field>
+        <field name="Availability">Not in stock</field>
+        <field name="MANUFACTURER">Waveshare</field>
+        <field name="Footprint">esp32s3Zero:MODULE_ESP32-S3-ZERO</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="esp32s3Zero" part="ESP32-S3-ZERO" description=""/>
+      <property name="MF" value="Waveshare Electronics"/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value="4.35mm"/>
+      <property name="CREATOR" value="ANA"/>
+      <property name="Price" value="None"/>
+      <property name="Package" value="None"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/ESP32-S3-Zero/Waveshare+Electronics/view-part/?ref=eda"/>
+      <property name="STANDARD" value="Manufacturer Recommendations"/>
+      <property name="PARTREV" value="NA"/>
+      <property name="VERIFIER" value="RODRIGO"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/ESP32-S3-Zero/Waveshare+Electronics/view-part/?ref=snap"/>
+      <property name="MP" value="ESP32-S3-Zero"/>
+      <property name="Description_1" value="&#xA;                        &#xA;                            ESP32-S3 Mini Development Board, Based on ESP32-S3FH4R2 Dual-Core Processor, 240MHz Running Frequency, 2.4GHz Wi-Fi &amp; Bluetooth 5&#xA;                        &#xA;"/>
+      <property name="Availability" value="Not in stock"/>
+      <property name="MANUFACTURER" value="Waveshare"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>08d01cf1-0858-4b32-b365-943804f7fb71</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>LM35-LP</value>
+      <footprint>Package_TO_SOT_THT:TO-92</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/lm35.pdf</datasheet>
+      <description>Precision centigrade temperature sensor, TO-92</description>
+      <fields>
+        <field name="Footprint">Package_TO_SOT_THT:TO-92</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/lm35.pdf</field>
+        <field name="Description">Precision centigrade temperature sensor, TO-92</field>
+      </fields>
+      <libsource lib="Sensor_Temperature" part="LM35-LP" description="Precision centigrade temperature sensor, TO-92"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <property name="ki_keywords" value="temperature sensor thermistor"/>
+      <property name="ki_fp_filters" value="TO?92*"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>13101e85-1966-4d28-a8cd-3170afd5b31c</tstamps>
+    </comp>
+    <comp ref="U4">
+      <value>DM-OLED096-636</value>
+      <footprint>OLED:MODULE_DM-OLED096-636</footprint>
+      <fields>
+        <field name="MF">Display Module</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">11.3 mm</field>
+        <field name="Package">Package</field>
+        <field name="Price">None</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/DM-OLED096-636/Display+Module/view-part/?ref=eda</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="PARTREV">2018-09-10</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/DM-OLED096-636/Display+Module/view-part/?ref=snap</field>
+        <field name="MP">DM-OLED096-636</field>
+        <field name="Description_1">
+                        
+                            0.96” 128 X 64 MONOCHROME GRAPHIC OLED DISPLAY MODULE - I2C
+                        
+</field>
+        <field name="Availability">Not in stock</field>
+        <field name="MANUFACTURER">Displaymodule</field>
+        <field name="Footprint">OLED:MODULE_DM-OLED096-636</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="OLED" part="DM-OLED096-636" description=""/>
+      <property name="MF" value="Display Module"/>
+      <property name="MAXIMUM_PACKAGE_HEIGHT" value="11.3 mm"/>
+      <property name="Package" value="Package"/>
+      <property name="Price" value="None"/>
+      <property name="Check_prices" value="https://www.snapeda.com/parts/DM-OLED096-636/Display+Module/view-part/?ref=eda"/>
+      <property name="STANDARD" value="Manufacturer Recommendations"/>
+      <property name="PARTREV" value="2018-09-10"/>
+      <property name="SnapEDA_Link" value="https://www.snapeda.com/parts/DM-OLED096-636/Display+Module/view-part/?ref=snap"/>
+      <property name="MP" value="DM-OLED096-636"/>
+      <property name="Description_1" value="&#xA;                        &#xA;                            0.96” 128 X 64 MONOCHROME GRAPHIC OLED DISPLAY MODULE - I2C&#xA;                        &#xA;"/>
+      <property name="Availability" value="Not in stock"/>
+      <property name="MANUFACTURER" value="Displaymodule"/>
+      <property name="Sheetname" value="Root"/>
+      <property name="Sheetfile" value="Temperature_sensor.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fe4aabb0-a176-46e1-ba73-208e60a8b4d1</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="" part="C_Polarized_1">
+      <description>Polarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C9</field>
+        <field name="Value">22uC</field>
+        <field name="Footprint">Capacitor_THT:CP_Radial_D8.0mm_P3.50mm</field>
+        <field name="Datasheet">~</field>
+        <field name="Description">Polarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="Conn_01x01_Pin">
+      <description>Generic connector, single row, 01x01, script generated</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x01_Pin</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Generic connector, single row, 01x01, script generated</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Unpolarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C_Polarized">
+      <description>Polarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Polarized</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Polarized capacitor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Light emitting diode</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R">
+      <description>Resistor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Resistor</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Mechanical" part="MountingHole">
+      <description>Mounting Hole without connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Mounting Hole without connection</field>
+      </fields>
+    </libpart>
+    <libpart lib="OLED" part="DM-OLED096-636">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">DM-OLED096-636</field>
+        <field name="Footprint">DM-OLED096-636:MODULE_DM-OLED096-636</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+        <field name="MF">Display Module</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">11.3 mm</field>
+        <field name="Package">Package</field>
+        <field name="Price">None</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/DM-OLED096-636/Display+Module/view-part/?ref=eda</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="PARTREV">2018-09-10</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/DM-OLED096-636/Display+Module/view-part/?ref=snap</field>
+        <field name="MP">DM-OLED096-636</field>
+        <field name="Description_1">
+                        
+                            0.96” 128 X 64 MONOCHROME GRAPHIC OLED DISPLAY MODULE - I2C
+                        
+</field>
+        <field name="Availability">Not in stock</field>
+        <field name="MANUFACTURER">Displaymodule</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VCC_IN" type="power_in"/>
+        <pin num="3" name="SCL" type="input"/>
+        <pin num="4" name="SDA" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="Sensor_Temperature" part="LM35-LP">
+      <description>Precision centigrade temperature sensor, TO-92</description>
+      <docs>http://www.ti.com/lit/ds/symlink/lm35.pdf</docs>
+      <footprints>
+        <fp>TO?92*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM35-LP</field>
+        <field name="Footprint">Package_TO_SOT_THT:TO-92_Inline</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/lm35.pdf</field>
+        <field name="Description">Precision centigrade temperature sensor, TO-92</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+V_{S}" type="power_in"/>
+        <pin num="2" name="V_{OUT}" type="output"/>
+        <pin num="3" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Switch" part="SW_Push">
+      <description>Push button switch, generic, two pins</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push</field>
+        <field name="Footprint"/>
+        <field name="Datasheet">~</field>
+        <field name="Description">Push button switch, generic, two pins</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="TC7660" part="TC7660">
+      <fields>
+        <field name="Reference">IC</field>
+        <field name="Value">TC7660</field>
+        <field name="Footprint">TC7660:TC7660</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+        <field name="MF">Toshiba</field>
+        <field name="Description_1">
+                        
+                            Charge Pump Switching Regulator IC Positive or Negative Fixed -Vin, 2Vin 1 Output 20mA 8-SOIC (0.154, 3.90mm Width)
+                        
+</field>
+        <field name="Package">SOIC-8 Toshiba</field>
+        <field name="Price">None</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/TC7660/Toshiba/view-part/?ref=snap</field>
+        <field name="MP">TC7660</field>
+        <field name="Availability">Not in stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/TC7660/Toshiba/view-part/?ref=eda</field>
+      </fields>
+      <pins>
+        <pin num="2" name="CAP+" type="bidirectional"/>
+        <pin num="3" name="GND" type="bidirectional"/>
+        <pin num="4" name="CAP-" type="bidirectional"/>
+        <pin num="5" name="VOUT" type="bidirectional"/>
+        <pin num="6" name="LV" type="bidirectional"/>
+        <pin num="7" name="OSC" type="bidirectional"/>
+        <pin num="8" name="V+" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="TP4056_IC" part="TP4056">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">TP4056</field>
+        <field name="Footprint">TP4056:SOP127P600X175-9N</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+        <field name="MF">NanJing Top Power ASIC Corp.</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">1.75mm</field>
+        <field name="Package">Package</field>
+        <field name="Price">None</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/TP4056/NanJing+Top+Power+ASIC+Corp./view-part/?ref=eda</field>
+        <field name="STANDARD">IPC 7351B</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/TP4056/NanJing+Top+Power+ASIC+Corp./view-part/?ref=snap</field>
+        <field name="MP">TP4056</field>
+        <field name="Description_1">
+                        
+                            Complete single cell Li-Ion battery with a constant current / constant voltage linear charger
+                        
+</field>
+        <field name="Availability">Not in stock</field>
+        <field name="MANUFACTURER">NanJing Top Power ASIC Corp.</field>
+      </fields>
+      <pins>
+        <pin num="1" name="TEMP" type="input"/>
+        <pin num="2" name="PROG" type="bidirectional"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="VCC" type="power_in"/>
+        <pin num="5" name="BAT" type="output"/>
+        <pin num="6" name="~{STDBY}" type="output"/>
+        <pin num="7" name="~{CHRG}" type="output"/>
+        <pin num="8" name="CE" type="input"/>
+        <pin num="9" name="EP" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="esp32s3Zero" part="ESP32-S3-ZERO">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ESP32-S3-ZERO</field>
+        <field name="Footprint">esp32s3Zero:MODULE_ESP32-S3-ZERO</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+        <field name="MF">Waveshare Electronics</field>
+        <field name="MAXIMUM_PACKAGE_HEIGHT">4.35mm</field>
+        <field name="CREATOR">ANA</field>
+        <field name="Price">None</field>
+        <field name="Package">None</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/ESP32-S3-Zero/Waveshare+Electronics/view-part/?ref=eda</field>
+        <field name="STANDARD">Manufacturer Recommendations</field>
+        <field name="PARTREV">NA</field>
+        <field name="VERIFIER">RODRIGO</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/ESP32-S3-Zero/Waveshare+Electronics/view-part/?ref=snap</field>
+        <field name="MP">ESP32-S3-Zero</field>
+        <field name="Description_1">
+                        
+                            ESP32-S3 Mini Development Board, Based on ESP32-S3FH4R2 Dual-Core Processor, 240MHz Running Frequency, 2.4GHz Wi-Fi &amp; Bluetooth 5
+                        
+</field>
+        <field name="Availability">Not in stock</field>
+        <field name="MANUFACTURER">Waveshare</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GP1" type="bidirectional"/>
+        <pin num="2" name="GP2" type="bidirectional"/>
+        <pin num="3" name="GP3" type="bidirectional"/>
+        <pin num="3V3" name="3V3(OUT)" type="power_in"/>
+        <pin num="4" name="GP4" type="bidirectional"/>
+        <pin num="5" name="GP5" type="bidirectional"/>
+        <pin num="5V" name="5V" type="power_in"/>
+        <pin num="6" name="GP6" type="bidirectional"/>
+        <pin num="7" name="GP7" type="bidirectional"/>
+        <pin num="8" name="GP8" type="bidirectional"/>
+        <pin num="9" name="GP9" type="bidirectional"/>
+        <pin num="10" name="GP10" type="bidirectional"/>
+        <pin num="11" name="GP11" type="bidirectional"/>
+        <pin num="12" name="GP12" type="bidirectional"/>
+        <pin num="13" name="GP13" type="bidirectional"/>
+        <pin num="GND" name="GND" type="power_in"/>
+        <pin num="RX" name="RX" type="input"/>
+        <pin num="TX" name="TX" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="switch_JS202011CQN" part="JS202011CQN">
+      <fields>
+        <field name="Reference">S</field>
+        <field name="Value">JS202011CQN</field>
+        <field name="Footprint">JS202011CQN:JS202011CQN</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+        <field name="MF">C&amp;K</field>
+        <field name="Description_1">
+                        
+                            Switch, Slide, DPDT, ON-ON, Top Slide, 300mA, 6VDC, ThruHole, PC Pin | C&amp;K JS202011CQN
+                        
+</field>
+        <field name="Package">None</field>
+        <field name="Price">None</field>
+        <field name="SnapEDA_Link">https://www.snapeda.com/parts/JS202011CQN/C%2526K/view-part/?ref=snap</field>
+        <field name="MP">JS202011CQN</field>
+        <field name="Availability">In Stock</field>
+        <field name="Check_prices">https://www.snapeda.com/parts/JS202011CQN/C%2526K/view-part/?ref=eda</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+        <pin num="4" name="" type="passive"/>
+        <pin num="5" name="" type="passive"/>
+        <pin num="6" name="" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>C:\Users\Knnn\AppData\Local\Programs\KiCad\8.0\share\kicad\symbols\/Connector.kicad_sym</uri>
+    </library>
+    <library logical="Device">
+      <uri>C:\Users\Knnn\AppData\Local\Programs\KiCad\8.0\share\kicad\symbols\/Device.kicad_sym</uri>
+    </library>
+    <library logical="Mechanical">
+      <uri>C:\Users\Knnn\AppData\Local\Programs\KiCad\8.0\share\kicad\symbols\/Mechanical.kicad_sym</uri>
+    </library>
+    <library logical="OLED">
+      <uri>C:/Users/Knnn/OneDrive/Documents/KiCad/8.0/symbols/OLED.kicad_sym</uri>
+    </library>
+    <library logical="Sensor_Temperature">
+      <uri>C:\Users\Knnn\AppData\Local\Programs\KiCad\8.0\share\kicad\symbols\/Sensor_Temperature.kicad_sym</uri>
+    </library>
+    <library logical="Switch">
+      <uri>C:\Users\Knnn\AppData\Local\Programs\KiCad\8.0\share\kicad\symbols\/Switch.kicad_sym</uri>
+    </library>
+    <library logical="TC7660">
+      <uri>C:/Users/Knnn/OneDrive/Documents/KiCad/8.0/symbols/TC7660.kicad_sym</uri>
+    </library>
+    <library logical="TP4056_IC">
+      <uri>C:/Users/Knnn/OneDrive/Documents/KiCad/8.0/symbols/TP4056.kicad_sym</uri>
+    </library>
+    <library logical="esp32s3Zero">
+      <uri>C:/Users/Knnn/OneDrive/Documents/KiCad/8.0/symbols/esp32s3Zero.kicad_sym</uri>
+    </library>
+    <library logical="switch_JS202011CQN">
+      <uri>C:/Users/Knnn/Desktop/LM35DZ_Temperature_sensor/TC7660/switch_JS202011CQN.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="0">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="3" pinfunction="GND" pintype="bidirectional"/>
+      <node ref="J1" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R1" pin="2" pintype="passive"/>
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="S1" pin="4" pintype="passive"/>
+      <node ref="SW1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="SW2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="SW3" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U1" pin="3" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="GND" pinfunction="GND" pintype="power_in"/>
+      <node ref="U3" pin="3" pinfunction="GND" pintype="power_in"/>
+      <node ref="U4" pin="1" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="2" name="3.3V">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="8" pinfunction="V+" pintype="bidirectional"/>
+      <node ref="S1" pin="6" pintype="passive"/>
+      <node ref="U2" pin="3V3" pinfunction="3V3(OUT)" pintype="power_in"/>
+      <node ref="U3" pin="1" pinfunction="+V_{S}" pintype="power_in"/>
+      <node ref="U4" pin="2" pinfunction="VCC_IN" pintype="power_in"/>
+    </net>
+    <net code="3" name="5V">
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="D1" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="D2" pin="2" pinfunction="A" pintype="passive"/>
+      <node ref="S1" pin="3" pintype="passive"/>
+      <node ref="U1" pin="4" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U1" pin="8" pinfunction="CE" pintype="input"/>
+    </net>
+    <net code="4" name="ADC">
+      <node ref="R4" pin="1" pintype="passive"/>
+      <node ref="U2" pin="6" pinfunction="GP6" pintype="bidirectional"/>
+      <node ref="U3" pin="2" pinfunction="V_{OUT}" pintype="output"/>
+    </net>
+    <net code="5" name="BAT">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="J2" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="R6" pin="1" pintype="passive"/>
+      <node ref="S1" pin="1" pintype="passive"/>
+      <node ref="U1" pin="5" pinfunction="BAT" pintype="output"/>
+    </net>
+    <net code="6" name="Chek_BAT">
+      <node ref="R6" pin="2" pintype="passive"/>
+      <node ref="R7" pin="1" pintype="passive"/>
+      <node ref="U2" pin="2" pinfunction="GP2" pintype="bidirectional"/>
+    </net>
+    <net code="7" name="GP1">
+      <node ref="S1" pin="5" pintype="passive"/>
+      <node ref="U2" pin="1" pinfunction="GP1" pintype="bidirectional"/>
+    </net>
+    <net code="8" name="GP3">
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="SW1" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="3" pinfunction="GP3" pintype="bidirectional"/>
+    </net>
+    <net code="9" name="GP7">
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="SW2" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="7" pinfunction="GP7" pintype="bidirectional"/>
+    </net>
+    <net code="10" name="GP8">
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="SW3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U2" pin="8" pinfunction="GP8" pintype="bidirectional"/>
+    </net>
+    <net code="11" name="Net-(D1-K)">
+      <node ref="D1" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+    </net>
+    <net code="12" name="Net-(D2-K)">
+      <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
+      <node ref="R3" pin="1" pintype="passive"/>
+    </net>
+    <net code="13" name="Net-(IC1-CAP+)">
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="IC1" pin="2" pinfunction="CAP+" pintype="bidirectional"/>
+    </net>
+    <net code="14" name="Net-(IC1-CAP-)">
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="4" pinfunction="CAP-" pintype="bidirectional"/>
+    </net>
+    <net code="15" name="Net-(IC1-VOUT)">
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="IC1" pin="5" pinfunction="VOUT" pintype="bidirectional"/>
+      <node ref="R5" pin="2" pintype="passive"/>
+    </net>
+    <net code="16" name="Net-(R4-Pad2)">
+      <node ref="R4" pin="2" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+    </net>
+    <net code="17" name="Net-(S1-Pad2)">
+      <node ref="S1" pin="2" pintype="passive"/>
+      <node ref="U2" pin="5V" pinfunction="5V" pintype="power_in"/>
+    </net>
+    <net code="18" name="Net-(U1-PROG)">
+      <node ref="R1" pin="1" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="PROG" pintype="bidirectional"/>
+    </net>
+    <net code="19" name="Net-(U1-~{CHRG})">
+      <node ref="R3" pin="2" pintype="passive"/>
+      <node ref="U1" pin="7" pinfunction="~{CHRG}" pintype="output"/>
+    </net>
+    <net code="20" name="Net-(U1-~{STDBY})">
+      <node ref="R2" pin="2" pintype="passive"/>
+      <node ref="U1" pin="6" pinfunction="~{STDBY}" pintype="output"/>
+    </net>
+    <net code="21" name="SCL">
+      <node ref="U2" pin="5" pinfunction="GP5" pintype="bidirectional"/>
+      <node ref="U4" pin="3" pinfunction="SCL" pintype="input"/>
+    </net>
+    <net code="22" name="SDA">
+      <node ref="U2" pin="4" pinfunction="GP4" pintype="bidirectional"/>
+      <node ref="U4" pin="4" pinfunction="SDA" pintype="bidirectional"/>
+    </net>
+    <net code="23" name="unconnected-(IC1-LV-Pad6)">
+      <node ref="IC1" pin="6" pinfunction="LV" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="24" name="unconnected-(IC1-OSC-Pad7)">
+      <node ref="IC1" pin="7" pinfunction="OSC" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="25" name="unconnected-(U1-EP-Pad9)">
+      <node ref="U1" pin="9" pinfunction="EP" pintype="passive+no_connect"/>
+    </net>
+    <net code="26" name="unconnected-(U1-TEMP-Pad1)">
+      <node ref="U1" pin="1" pinfunction="TEMP" pintype="input+no_connect"/>
+    </net>
+    <net code="27" name="unconnected-(U2-GP9-Pad9)">
+      <node ref="U2" pin="9" pinfunction="GP9" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="28" name="unconnected-(U2-GP10-Pad10)">
+      <node ref="U2" pin="10" pinfunction="GP10" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="29" name="unconnected-(U2-GP11-Pad11)">
+      <node ref="U2" pin="11" pinfunction="GP11" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="30" name="unconnected-(U2-GP12-Pad12)">
+      <node ref="U2" pin="12" pinfunction="GP12" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="31" name="unconnected-(U2-GP13-Pad13)">
+      <node ref="U2" pin="13" pinfunction="GP13" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="32" name="unconnected-(U2-PadRX)">
+      <node ref="U2" pin="RX" pinfunction="RX" pintype="input+no_connect"/>
+    </net>
+    <net code="33" name="unconnected-(U2-PadTX)">
+      <node ref="U2" pin="TX" pinfunction="TX" pintype="output+no_connect"/>
+    </net>
+  </nets>
+</export>
