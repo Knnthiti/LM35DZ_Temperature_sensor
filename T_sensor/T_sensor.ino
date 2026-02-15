@@ -8,9 +8,9 @@
 #include <driver/adc.h>
 
 // --- การตั้งค่าพิน ---
-#define I2C_SDA 2
-#define I2C_SCL 3
-#define ADC_CHAN ADC1_CHANNEL_5 
+#define I2C_SDA 4
+#define I2C_SCL 5
+#define ADC_CHAN ADC1_CHANNEL_6
 #define SCREEN_WIDTH 128
 #define SCREEN_HEIGHT 64
 
