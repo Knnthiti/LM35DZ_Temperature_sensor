@@ -1,139 +1,62 @@
-#include <WiFi.h>
-#include <WebServer.h>
-#include <WebSocketsServer.h>
-#include <WiFiManager.h>      
+#include <driver/adc.h>
 #include <Wire.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
-#include <driver/adc.h>
 
-// --- การตั้งค่าพิน ---
+uint32_t raw_value_1 = 0;
+uint32_t raw_value_avg = 0;
+float V = 0;
+
 #define I2C_SDA 4
 #define I2C_SCL 5
-#define ADC_CHAN ADC1_CHANNEL_6
-#define SCREEN_WIDTH 128
-#define SCREEN_HEIGHT 64
 
-Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
-WebServer server(80);
-WebSocketsServer webSocket = WebSocketsServer(81);
-int values[SCREEN_WIDTH];
-String JSONtxt;
-
-#include "html_page.h"
-
-// ฟังก์ชัน Callback: แสดงข้อมูลเมื่อ ESP32 เข้าโหมด Config
-void configModeCallback (WiFiManager *myWiFiManager) {
-  display.clearDisplay();
-  display.setTextSize(1);
-  display.setTextColor(SSD1306_WHITE);
-  display.setCursor(0, 0);
-  display.println("--- WIFI CONFIG ---");
-  
-  display.setCursor(0, 15);
-  display.print("SSID: ");
-  display.println("AutoConnectAP");
-  
-  display.print("PASS: ");
-  display.setTextColor(SSD1306_BLACK, SSD1306_WHITE); // ไฮไลท์รหัสผ่านเพื่อให้สังเกตง่าย
-  display.println("12345678");
-  
-  display.setTextColor(SSD1306_WHITE, SSD1306_BLACK);
-  display.setCursor(0, 40);
-  display.println("Web Address:");
-  display.setTextSize(1);
-  display.setCursor(15, 52);
-  display.println("192.168.4.1");
-  
-  display.display();
-  
-  Serial.println("Entered config mode");
-}
+Adafruit_SSD1306 display(128, 64, &Wire, -1);
 
 void setup() {
-    Serial.begin(115200);
-    Wire.begin(I2C_SDA, I2C_SCL);
-    if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
-        for(;;);
-    }
+  // setup_ADC
+  adc1_config_channel_atten(ADC1_CHANNEL_5, ADC_ATTEN_DB_0);
+  adc1_config_width(ADC_WIDTH_BIT_12);
 
-    display.clearDisplay();
-    display.setTextSize(1);
-    display.setTextColor(SSD1306_WHITE);
-    display.setCursor(0, 10);
-    display.println("System Booting...");
-    display.display();
+  Wire.begin(I2C_SDA, I2C_SCL);
+  
+  // เช็คการเชื่อมต่อ OLED
+  if (!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
+    Serial.println(F("SSD1306 allocation failed"));
+    for (;;); // วนลูปค้างไว้ถ้าหาจอไม่เจอ
+  }
 
-    adc1_config_width(ADC_WIDTH_BIT_12);
-    adc1_config_channel_atten(ADC_CHAN, ADC_ATTEN_DB_11);
+  // กำหนดสีตัวอักษรเป็นสีขาว (เปิดหลอด LED) ให้จอ OLED ตั้งแต่ Setup
+  display.setTextColor(SSD1306_WHITE);
 
-    WiFi.mode(WIFI_STA); 
-    WiFiManager wm;
-
-    // ตั้งค่า Callback เพื่อโชว์รหัสผ่านบนจอ
-    wm.setAPCallback(configModeCallback);
-
-    bool res;
-    // ปรับเปลี่ยน SSID และ Password ตามที่คุณต้องการ
-    res = wm.autoConnect("AutoConnectAP", "12345678"); 
-
-    if(!res) {
-        display.clearDisplay();
-        display.println("Connect Failed!");
-        display.display();
-    } 
-    else {
-        display.clearDisplay();
-        display.setCursor(0, 0);
-        display.println("WiFi Connected!");
-        display.println("");
-        display.setTextSize(1);
-        display.println("SERVER IP:");
-        display.setTextColor(SSD1306_BLACK, SSD1306_WHITE);
-        display.println(WiFi.localIP().toString()); 
-        display.display();
-        delay(3000);
-    }
-
-    for(int i=0; i<SCREEN_WIDTH; i++) values[i] = SCREEN_HEIGHT - 1;
-    server.on("/", []() { server.send(200, "text/html", webpageCode); });
-    server.begin();
-    webSocket.begin();
+  Serial.begin(115200);
 }
 
 void loop() {
-    webSocket.loop();
-    server.handleClient();
+  for (uint16_t i = 0; i < 1000; i++) {
+    raw_value_avg += adc1_get_raw(ADC1_CHANNEL_5);
+    delay(1);
+  }
 
-    // อ่านค่า Analog
-    uint32_t raw = adc1_get_raw(ADC_CHAN);
-    float voltage = (float)((map(raw, 0, 4095, 0, 2800)) + 134) / 1000.00;
+  raw_value_1 = raw_value_avg / 1000;
+  raw_value_avg = 0;
 
-    // อัปเดตข้อมูลกราฟ
-    int y_val = map(raw, 0, 4095, SCREEN_HEIGHT - 1, 18);
-    for(int i = 0; i < SCREEN_WIDTH - 1; i++) values[i] = values[i+1];
-    values[SCREEN_WIDTH - 1] = y_val;
+  // bit_to_V (เปลี่ยนมาใช้สมการแทน map เพื่อรักษาทศนิยม และใส่ offset ชดเชย)
+  // (raw_value * (950 / 4096)) + 4 แล้วนำทั้งหมดไปหาร 1000
+  V = ((raw_value_1 * (950.0 / 4096.0)) + 4.0) / 1000.0;
 
-    display.clearDisplay();
-    display.setTextSize(1);
-    display.setTextColor(SSD1306_WHITE);
-    display.setCursor(0, 0);
-    display.print("IP: "); 
-    display.println(WiFi.localIP()); 
-    display.print("V : ");
-    display.print(voltage, 2);
-    display.println(" V");
-    display.drawFastHLine(0, 16, 128, SSD1306_WHITE);
+  // print value ลง Serial Monitor
+  Serial.print(raw_value_1);
+  Serial.print(" , ");
+  Serial.print(V, 4);
+  Serial.println(" V");
 
-    for(int x = 0; x < SCREEN_WIDTH - 1; x++) {
-        display.drawLine(x, values[x], x + 1, values[x+1], SSD1306_WHITE);
-    }
-    display.display();
+  // แสดงผลบนจอ OLED
+  display.clearDisplay();
+  display.setTextSize(3);
+  display.setCursor(10, 25);
+  display.print(V, 2); // แสดงผลแค่ 2 ตำแหน่งบนจอตามที่คุณเขียนไว้
+  display.print(" V");
+  display.display();
 
-    static unsigned long lastSend = 0;
-    if (millis() - lastSend > 50) {
-        JSONtxt = "{\"val\":" + String(voltage, 3) + ",\"raw\":" + String(raw) + "}";
-        webSocket.broadcastTXT(JSONtxt);
-        lastSend = millis();
-    }
+  delay(10);
 }

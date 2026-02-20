@@ -27,6 +27,11 @@ DeviceMode currentMode = IDLE;
 
 #include "html_page.h"  // อย่าลืมไฟล์นี้ต้องอยู่ในโฟลเดอร์เดียวกัน
 
+uint32_t raw_value_1 = 0;
+uint32_t raw_value_avg = 0;
+
+float V = 0;
+
 // --- 1. ฟังก์ชันจัดการหน้าจอ OLED ---
 void updateDisplay(String title, String line1, String line2) {
   display.clearDisplay();
@@ -97,8 +102,18 @@ void Print_ADC() {
 }
 
 float ADC_2_Temperature() {
-  uint32_t raw = adc1_get_raw(ADC_SCOPE_PIN);
-  return (raw * 3.3) / 4095.0;
+  for (uint16_t i = 0; i < 1000; i++) {
+    raw_value_avg += adc1_get_raw(ADC_SCOPE_PIN);
+    delay(1);
+  }
+
+  raw_value_1 = raw_value_avg/1000;
+  raw_value_avg = 0;
+
+  //bit_to_V
+  V = (float)(map(raw_value_1, 0, 4096, 0, 950)+4) / 1000.00;
+  V += 0.04;
+  return V;
 }
 
 void setup() {
@@ -114,7 +129,7 @@ void setup() {
       ;
 
   adc1_config_width(ADC_WIDTH_BIT_12);
-  adc1_config_channel_atten(ADC_SCOPE_PIN, ADC_ATTEN_DB_11);
+  adc1_config_channel_atten(ADC_SCOPE_PIN, ADC_ATTEN_DB_0);
 
   updateDisplay("STARTING...", "Connecting WiFi...", "Please wait");
 
