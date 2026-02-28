@@ -1105,6 +1105,261 @@
 				)
 			)
 		)
+		(symbol "Sensor_Temperature:LM35-LP"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at -6.35 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LM35-LP"
+				(at 1.27 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+				(at 1.27 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm35.pdf"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Precision centigrade temperature sensor, TO-92"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "temperature sensor thermistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO?92*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LM35-LP_0_1"
+				(rectangle
+					(start -7.62 5.08)
+					(end 7.62 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(circle
+					(center -4.445 -2.54)
+					(radius 1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -3.81 -1.905)
+					(end -5.08 0)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(arc
+					(start -3.81 3.175)
+					(mid -4.445 3.8073)
+					(end -5.08 3.175)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 0.635) (xy -4.445 0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 1.27) (xy -4.445 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 1.905) (xy -4.445 1.905)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 2.54) (xy -4.445 2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 3.175) (xy -5.08 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -5.08 3.175) (xy -4.445 3.175)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 3.175) (xy -3.81 0)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LM35-LP_1_1"
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "+V_{S}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 10.16 0 180)
+					(length 2.54)
+					(name "V_{OUT}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Simulation_SPICE:0"
 			(power)
 			(pin_numbers hide)
@@ -1305,6 +1560,12 @@
 		(uuid "34b386f9-3fc1-493f-bac9-484a24dfb436")
 	)
 	(junction
+		(at 110.49 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4f734487-a5e3-420f-860b-d4b14f8f9d81")
+	)
+	(junction
 		(at 133.35 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1346,12 +1607,6 @@
 		(color 0 0 0 0)
 		(uuid "db7a9321-2363-4b6e-8c94-d58d07fb3144")
 	)
-	(junction
-		(at 111.76 54.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e4f5d61a-aad1-4490-9cd4-1bb2cbb7d9ec")
-	)
 	(no_connect
 		(at 114.3 106.68)
 		(uuid "79b02ee1-7ea3-4444-9b2a-a48d07678524")
@@ -1382,6 +1637,16 @@
 	)
 	(wire
 		(pts
+			(xy 110.49 73.66) (xy 110.49 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cdf4c8e-8d0b-4c67-aaca-13f0ac6ee47d")
+	)
+	(wire
+		(pts
 			(xy 133.35 57.15) (xy 144.78 57.15)
 		)
 		(stroke
@@ -1389,16 +1654,6 @@
 			(type default)
 		)
 		(uuid "23ff86cb-8530-45c4-84f2-72637f68396f")
-	)
-	(wire
-		(pts
-			(xy 111.76 54.61) (xy 118.11 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2499bb57-13e7-40ae-85d2-bd7cc3c6ef72")
 	)
 	(wire
 		(pts
@@ -1422,6 +1677,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 44.45) (xy 99.06 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "487a1b54-b872-4b0f-8e31-34870eede278")
+	)
+	(wire
+		(pts
 			(xy 176.53 59.69) (xy 176.53 71.12)
 		)
 		(stroke
@@ -1429,6 +1694,16 @@
 			(type default)
 		)
 		(uuid "4b7b74db-2a93-456f-91ac-df1c5839aa92")
+	)
+	(wire
+		(pts
+			(xy 110.49 54.61) (xy 118.11 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "525bcac4-5612-472e-a47d-a49bf2ec4965")
 	)
 	(wire
 		(pts
@@ -1452,7 +1727,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 55.88) (xy 92.71 55.88)
+			(xy 67.31 55.88) (xy 78.74 55.88)
 		)
 		(stroke
 			(width 0)
@@ -1489,6 +1764,16 @@
 			(type default)
 		)
 		(uuid "7e2ff622-8ed5-4d62-bbcd-4a25ad049959")
+	)
+	(wire
+		(pts
+			(xy 99.06 66.04) (xy 99.06 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fbf477f-6ca0-4250-8957-d9027038e847")
 	)
 	(wire
 		(pts
@@ -1549,16 +1834,6 @@
 			(type default)
 		)
 		(uuid "9bbdbca4-2e6d-46f5-9c95-e5ab971b7990")
-	)
-	(wire
-		(pts
-			(xy 110.49 54.61) (xy 111.76 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e07b473-95c3-4014-8014-c6368eb36687")
 	)
 	(wire
 		(pts
@@ -1632,6 +1907,16 @@
 	)
 	(wire
 		(pts
+			(xy 109.22 54.61) (xy 110.49 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d59bf4c7-11d4-4afa-a8aa-c8a3026e9edb")
+	)
+	(wire
+		(pts
 			(xy 176.53 83.82) (xy 176.53 76.2)
 		)
 		(stroke
@@ -1672,13 +1957,35 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 55.88) (xy 92.71 59.69)
+			(xy 78.74 55.88) (xy 78.74 59.69)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "fe10dcd6-8785-4c3d-8441-e5b0df406040")
+	)
+	(global_label "3.3V"
+		(shape input)
+		(at 99.06 44.45 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "22737f88-2c58-4c0d-aaf3-4866d952c24e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.1576 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(global_label "3.3V"
 		(shape input)
@@ -1702,9 +2009,9 @@
 			)
 		)
 	)
-	(global_label "3.3V"
+	(global_label "V_3.3"
 		(shape input)
-		(at 81.28 53.34 0)
+		(at 110.49 73.66 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1712,9 +2019,9 @@
 			)
 			(justify left)
 		)
-		(uuid "78e0eb05-603d-4507-bb2b-763c879fcd16")
+		(uuid "66f1423b-c60f-4a58-909d-3f7512df16d0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 88.3776 53.34 0)
+			(at 118.5552 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1724,31 +2031,31 @@
 			)
 		)
 	)
-	(global_label "V_IN"
+	(global_label "3.3V"
 		(shape input)
-		(at 110.49 54.61 180)
+		(at 67.31 53.34 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "8130db49-bbcc-465a-bc3c-e6f2b2c6875a")
+		(uuid "78e0eb05-603d-4507-bb2b-763c879fcd16")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 103.5133 54.61 0)
+			(at 74.4076 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 				(hide yes)
 			)
 		)
 	)
-	(global_label "V_IN"
+	(global_label "V_3.3"
 		(shape input)
-		(at 81.28 58.42 0)
+		(at 67.31 58.42 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1758,7 +2065,7 @@
 		)
 		(uuid "9447d7ea-1819-4f19-a5a3-c8ab08a362f8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 88.2567 58.42 0)
+			(at 75.3752 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1814,7 +2121,7 @@
 	)
 	(global_label "V_out"
 		(shape input)
-		(at 81.28 60.96 0)
+		(at 67.31 60.96 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1824,7 +2131,7 @@
 		)
 		(uuid "d2a5f67d-fb09-4097-961c-92f8a07b8d5d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 89.3451 60.96 0)
+			(at 75.3751 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1853,6 +2160,80 @@
 				)
 				(justify left)
 				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Sensor_Temperature:LM35-LP")
+		(at 99.06 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "02dac880-a0ad-4fb1-a98b-b741e003c3be")
+		(property "Reference" "U1"
+			(at 90.17 53.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LM35-LP"
+			(at 90.17 55.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_THT:TO-92_Inline"
+			(at 100.33 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm35.pdf"
+			(at 99.06 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Precision centigrade temperature sensor, TO-92"
+			(at 99.06 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "b3f1bf03-d8cd-4dd3-b040-633fa406d535")
+		)
+		(pin "1"
+			(uuid "72b70d42-bbf5-4bc8-bfd4-0e8eeccf6dd2")
+		)
+		(pin "2"
+			(uuid "4a1b8cdf-bdff-46f2-bc90-2ed8cf3898bd")
+		)
+		(instances
+			(project ""
+				(path "/d6d372eb-6250-4e65-986e-d045d4e9a5c2"
+					(reference "U1")
+					(unit 1)
+				)
 			)
 		)
 	)
@@ -1924,6 +2305,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 110.49 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0db80275-1d1a-4ecb-9403-8f7cd254ebc4")
+		(property "Reference" "R2"
+			(at 113.03 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R"
+			(at 113.03 59.6899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 108.712 58.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 110.49 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1280cd98-55c9-4a5e-ba48-7137237c178d")
+		)
+		(pin "1"
+			(uuid "db449109-3066-425b-ac6b-5d878e8830f9")
+		)
+		(instances
+			(project ""
+				(path "/d6d372eb-6250-4e65-986e-d045d4e9a5c2"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Simulation_SPICE:0")
 		(at 142.24 44.45 0)
 		(unit 1)
@@ -1984,72 +2435,6 @@
 			(project ""
 				(path "/d6d372eb-6250-4e65-986e-d045d4e9a5c2"
 					(reference "#GND01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 111.76 54.61 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1dc167ae-631f-4b2d-997b-0dcb81daa634")
-		(property "Reference" "#FLG03"
-			(at 111.76 52.705 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_VIN"
-			(at 111.76 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 111.76 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 111.76 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 111.76 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "76b898ac-4952-45fc-82d8-fbb5fa7cc7d6")
-		)
-		(instances
-			(project ""
-				(path "/d6d372eb-6250-4e65-986e-d045d4e9a5c2"
-					(reference "#FLG03")
 					(unit 1)
 				)
 			)
@@ -2866,16 +3251,16 @@
 	)
 	(symbol
 		(lib_id "Simulation_SPICE:0")
-		(at 92.71 59.69 0)
+		(at 99.06 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "92dc9b90-f8d3-424d-b63a-8eace05ce383")
-		(property "Reference" "#GND03"
-			(at 92.71 64.77 0)
+		(uuid "880a332a-deb1-41b8-9043-7c276fe9f98d")
+		(property "Reference" "#GND07"
+			(at 99.06 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2884,7 +3269,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 92.71 57.15 0)
+			(at 99.06 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2892,7 +3277,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 92.71 59.69 0)
+			(at 99.06 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2901,7 +3286,7 @@
 			)
 		)
 		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#subsec_Circuit_elements__device"
-			(at 92.71 69.85 0)
+			(at 99.06 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2910,7 +3295,73 @@
 			)
 		)
 		(property "Description" "0V reference potential for simulation"
-			(at 92.71 67.31 0)
+			(at 99.06 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8a64a49a-cbf4-4c78-a6d0-4fa69a353979")
+		)
+		(instances
+			(project ""
+				(path "/d6d372eb-6250-4e65-986e-d045d4e9a5c2"
+					(reference "#GND07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:0")
+		(at 78.74 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "92dc9b90-f8d3-424d-b63a-8eace05ce383")
+		(property "Reference" "#GND03"
+			(at 78.74 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "0"
+			(at 78.74 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.74 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#subsec_Circuit_elements__device"
+			(at 78.74 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "0V reference potential for simulation"
+			(at 78.74 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2998,7 +3449,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x04_Pin")
-		(at 76.2 55.88 0)
+		(at 62.23 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3007,7 +3458,7 @@
 		(fields_autoplaced yes)
 		(uuid "a03fe07c-d76f-4fec-9ccb-18e455a53dfb")
 		(property "Reference" "J1"
-			(at 76.835 48.26 0)
+			(at 62.865 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3015,7 +3466,7 @@
 			)
 		)
 		(property "Value" "Conn_01x04_Pin"
-			(at 76.835 50.8 0)
+			(at 62.865 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3023,7 +3474,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 76.2 55.88 0)
+			(at 62.23 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3032,7 +3483,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 76.2 55.88 0)
+			(at 62.23 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3041,7 +3492,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated"
-			(at 76.2 55.88 0)
+			(at 62.23 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3350,6 +3801,76 @@
 			(project "PCB_Temperature_sensor_V2"
 				(path "/d6d372eb-6250-4e65-986e-d045d4e9a5c2"
 					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 110.49 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d8fd6ac4-33a9-4445-9f02-15d4b5e2240a")
+		(property "Reference" "R3"
+			(at 113.03 64.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R"
+			(at 113.03 67.3099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
+			(at 108.712 66.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 110.49 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8ef6d293-0a7d-4486-951d-7e47d00f5d55")
+		)
+		(pin "1"
+			(uuid "537ffd25-a882-4581-bad4-e005e216e777")
+		)
+		(instances
+			(project "PCB_Temperature_sensor_V2"
+				(path "/d6d372eb-6250-4e65-986e-d045d4e9a5c2"
+					(reference "R3")
 					(unit 1)
 				)
 			)
