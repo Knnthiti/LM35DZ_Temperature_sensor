@@ -98,14 +98,33 @@ float Get_Voltage() {
   raw_value_avg = 0;
 
   // bit_to_V
-  V = (float)(map(raw_value_1, 0, 4096, 0, 950) + 4) / 1000.00;
-  V += 0.04;
+  V = (float)(map(raw_value_1, 0, 4096, 0, 3180));
+  if(V < 1000){
+    V += 100;
+  }else{
+    V += 200;
+  }
+
+  if(V > 3000){
+    V -= 120;
+  }
+
+  V = V/1000.0;
+
+  Serial.println(V ,3);
   return V;
 }
 
-float Get_Temperature(float v) {
-  // สมการ C = 14.286V + 5.7143
-  return (14.286 * v) + 5.7143;
+float Get_Temperature() {
+  // 1. ดึงค่าแรงดันปัจจุบันมาคูณ 1000 เพื่อทำเป็นมิลลิโวลต์ (mV) 
+  // (จำเป็นต้องแปลงเป็นจำนวนเต็มเพื่อให้ทำงานกับ map() ได้แม่นยำ)
+  long mV = Get_Voltage() * 1000;
+
+  // 2. แมปค่าจากช่วงแรงดัน (500 - 3100 mV) เป็นช่วงอุณหภูมิ (2000 - 5000)
+  long temp_mapped = map(mV, 640, 3260, 2000, 5000);
+
+  // 3. หารด้วย 100.0 เพื่อคืนค่ากลับเป็นเลขทศนิยม (เช่น 2550 / 100.0 = 25.50 °C)
+  return (float)temp_mapped / 100.0;
 }
 
 // --- 6. ฟังก์ชันแสดงผลบนจอ OLED ---
@@ -120,8 +139,8 @@ void Print_Voltage() {
 }
 
 void Print_Temperature() {
-  float voltage = Get_Voltage();
-  float temp = Get_Temperature(voltage);
+  // ไม่ต้องแนบค่า voltage เข้าไปในวงเล็บแล้ว เพราะฟังก์ชันจะไปอ่าน ADC เอง
+  float temp = Get_Temperature(); 
   display.clearDisplay();
   display.setTextSize(3);
   display.setCursor(10, 25);
@@ -182,9 +201,10 @@ void loop() {
       static unsigned long lastWS = 0;
       if (millis() - lastWS > 100) {
         float v = Get_Voltage();
-        float t = Get_Temperature(v);
+        // เรียกใช้ฟังก์ชันแบบไม่มีพารามิเตอร์
+        float t = Get_Temperature(); 
 
-        // ส่งข้อมูลเป็น JSON: {"v": 1.23, "t": 23.45}
+        // ส่งข้อมูลเป็น JSON
         String json = "{\"v\":" + String(v, 3) + ",\"t\":" + String(t, 2) + "}";
         webSocket.broadcastTXT(json);
         lastWS = millis();
