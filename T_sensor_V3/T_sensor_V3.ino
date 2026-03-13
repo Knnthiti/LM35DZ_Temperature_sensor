@@ -71,6 +71,10 @@ void startNetwork() {
 void runWiFiManager(bool forceConfig) {
   currentMode = MODE_WIFI;
   WiFiManager wm;
+  
+  // ตั้งค่า Timeout ให้ Config Portal (ถ้าไม่มีคนต่อภายใน 60 วิ จะหลุดกลับไปทำ loop ต่อ)
+  wm.setConfigPortalTimeout(60); 
+  
   wm.setAPCallback(configModeCallback);
 
   bool res;
@@ -84,6 +88,12 @@ void runWiFiManager(bool forceConfig) {
     updateDisplay("CONNECTED", "http://" + WiFi.localIP().toString(), " ");
     delay(2000);
     startNetwork();
+  } else {
+    // กรณีที่ Timeout หรือหลุดจากการตั้งค่า
+    Serial.println("Failed to connect or hit timeout");
+    currentMode = IDLE; // กลับไปโหมดว่าง
+    updateDisplay("WIFI TIMEOUT", "Press button to", "select mode");
+    delay(2000);
   }
 }
 
@@ -165,28 +175,27 @@ void setup() {
   adc1_config_channel_atten(ADC_SCOPE_PIN, ADC_ATTEN_DB_11);
 
   updateDisplay("STARTING...", "Connecting WiFi...", "Please wait");
-  runWiFiManager(false);
+  runWiFiManager(false); // เรียกครั้งแรกตอนบูต (พยายามต่ออันเก่า)
 }
 
 void loop() {
   if (digitalRead(1) == 0) {
     // โหมดตั้งค่า WiFi (GPIO 3)
     if (digitalRead(BTN_WIFI) == LOW) {
-      delay(10);
-      ESP.restart();
+      delay(200); // Debounce
+      // ถ้ากดปุ่ม WiFi เราจะไม่ restart ห้วนๆ แล้ว แต่จะเรียก WiFiManager ขึ้นมาเลย
       runWiFiManager(true);
-      currentMode = IDLE;
     }
 
     // โหมดแสดงอุณหภูมิ (GPIO 7)
     if (digitalRead(BTN_TEMP) == LOW) {
-      delay(10);
+      delay(200); // Debounce
       currentMode = MODE_TEMP;
     }
 
     // โหมดแสดงแรงดัน (GPIO 8)
     if (digitalRead(BTN_VOLTAGE) == LOW) {
-      delay(10);
+      delay(200); // Debounce
       currentMode = MODE_VOLTAGE;
     }
 
@@ -198,10 +207,10 @@ void loop() {
       Print_Temperature();
     } 
     else if (currentMode == MODE_WIFI) {
+      // โหมดนี้จะทำงานเมื่อ WiFi เชื่อมต่อสำเร็จแล้วเท่านั้น
       static unsigned long lastWS = 0;
       if (millis() - lastWS > 100) {
         float v = Get_Voltage();
-        // เรียกใช้ฟังก์ชันแบบไม่มีพารามิเตอร์
         float t = Get_Temperature(); 
 
         // ส่งข้อมูลเป็น JSON
@@ -211,6 +220,17 @@ void loop() {
       }
       webSocket.loop();
       server.handleClient();
+      
+      // อัปเดตหน้าจอให้รู้ว่าอยู่ในโหมด WiFi พร้อมส่งค่า
+      display.clearDisplay();
+      display.setTextSize(1);
+      display.setCursor(0, 0);
+      display.print("IP: "); display.println(WiFi.localIP());
+      display.setCursor(0, 15);
+      display.print("V: "); display.print(v, 2);
+      display.setCursor(0, 30);
+      display.print("T: "); display.print(t, 2);
+      display.display();
     }
   } else {
     // กรณีที่ GPIO 1 เป็น High (พักหน้าจอ)

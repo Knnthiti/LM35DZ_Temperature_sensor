@@ -29795,50 +29795,6 @@
 			)
 		)
 	)
-	(gr_circle
-		(center 112.26 107.03)
-		(end 114.198376 107.03)
-		(stroke
-			(width 0.5)
-			(type default)
-		)
-		(fill none)
-		(layer "Edge.Cuts")
-		(uuid "37054fea-1d27-4178-9948-083b2733fa29")
-	)
-	(gr_circle
-		(center 78.64 59.39)
-		(end 80.578376 59.39)
-		(stroke
-			(width 0.5)
-			(type default)
-		)
-		(fill none)
-		(layer "Edge.Cuts")
-		(uuid "717eb0d7-7258-4357-bbae-dc3949c588b5")
-	)
-	(gr_circle
-		(center 79.01 107.08)
-		(end 80.948376 107.08)
-		(stroke
-			(width 0.5)
-			(type default)
-		)
-		(fill none)
-		(layer "Edge.Cuts")
-		(uuid "7b16b2ed-eccd-497d-9b16-9e8ed7df6323")
-	)
-	(gr_circle
-		(center 112.368375 59.28)
-		(end 114.306751 59.28)
-		(stroke
-			(width 0.5)
-			(type default)
-		)
-		(fill none)
-		(layer "Edge.Cuts")
-		(uuid "8977decb-42e0-4391-b633-5877e63bad3a")
-	)
 	(gr_rect
 		(start 122.225 56.845)
 		(end 163.355 112.075)
@@ -29849,19 +29805,6 @@
 		(fill none)
 		(layer "Edge.Cuts")
 		(uuid "9235d61e-c080-49df-b8b6-cdb8d44089cf")
-	)
-	(gr_poly
-		(pts
-			(xy 74.963375 55.535) (xy 74.963375 110.765) (xy 85.688375 110.74) (xy 85.948375 84.66) (xy 106.008375 84.62)
-			(xy 106.058375 110.77) (xy 116.093375 110.765) (xy 116.093375 55.535)
-		)
-		(stroke
-			(width 0.5)
-			(type solid)
-		)
-		(fill none)
-		(layer "Edge.Cuts")
-		(uuid "ed746993-bba2-4fb2-b016-8ee9bfcb2bfb")
 	)
 	(gr_text "design by Knnthiti"
 		(at 127.93 70.47 270)
