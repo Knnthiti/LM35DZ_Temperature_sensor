@@ -101,9 +101,9 @@ $$C = 11.336(ADC) + 13.106$$
 
 ![3D model overview](model_PCB_V2.png)
 
-เป็น Zero and span adjustment circuit
--R เป็น Rf ปรับกำลังขยาย
--R เป็น span ปรับแรงดัน
+เป็น Zero and span adjustment circuit :
+- **R ตัวบน:** เป็น Rf ปรับกำลังขยาย
+- **R ตัวล่าง:** เป็น span ปรับแรงดัน
 
 โค้ดโปรแกรมสามารถดูได้ที่ไฟล์ `T_sensor_V3/T_sensor_V3.ino`
 
